@@ -1,4 +1,56 @@
+body {
+	background-color: #E4DBE0;
+}
 
 h1 {
 	font-family: 'Poor Story', serif;
+	font-size: 4vw;
+	padding: 2%;
 }
+
+a {
+	color: black;
+	font-family: 'Poor Story', serif;
+	font-size: 2vw;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	font-family: 'Poor Story', serif;
+	text-decoration: none;
+}
+
+div {
+	font-family: 'Poor Story', serif;
+	font-size: 2vw;
+}
+
+footer {
+	text-align: center;
+}
+
+/*https://stackoverflow.com/questions/35260994/centering-2-elements-inside-bootstrap-column*/
+.center-div {
+	display: inline-block;
+	margin:0 auto;
+	text-align: center;
+}
+
+.back {
+	align-items: center;
+	display: flex;	
+	font-family: 'Poor Story', serif;
+	font-size: 1vw;
+	padding: 2%;
+	width: 100%;
+}
+
+.back img {
+	width: 4%;
+}
+
