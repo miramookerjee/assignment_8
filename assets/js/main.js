@@ -1,6 +1,39 @@
+function onLoadDebut() {
+
+}
+
+function onLoadFearless() {
+
+}
+
+function onLoadSpeakNow() {
+
+}
+
+function onLoadRed() {
+
+}
+
+function onLoad1989() {
+
+}
+
+function onLoadRep() {
+
+}
+
+function onLoadLover() {
+
+}
+
 function onLoadFolklore() {
   addTriviaMouseoverFolklore()
 }
+
+function onLoadEvermore() {
+
+}
+
 
 /* ****************************** Lightbox (Source: https://www.w3schools.com/howto/howto_js_lightbox.asp) ****************************** */
 
