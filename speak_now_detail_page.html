@@ -31,7 +31,7 @@ n.js"></script>
 	<!-- javascript -->
     <script src="assets/js/main.js" type="text/javascript"></script>
 </head>
-<body onload="onLoadFolklore()">
+<body onload="onLoadSpeakNow()">
 	
 	<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
 
@@ -42,10 +42,10 @@ n.js"></script>
 		 </a>
 	</div>
 
-	<h1 class="album_detail_header"> Folklore </h1>
+	<h1 class="album_detail_header"> Speak Now </h1>
 	<div class="row align-items-start">
 		<div class="col-sm-5">
-			<img class="album_detail_pic img-fluid" src="images/folklore_detail.png" alt="Folklore Album Cover"/>
+			<img class="album_detail_pic img-fluid" src="images/speak_now_detail.png" alt="Speak Now Album Cover"/>
 		</div>
 
 		<div class="col-sm-1"></div>
@@ -56,22 +56,21 @@ n.js"></script>
 	</div>
 
 	<br><br><br>
-
 	<!-- Source: https://www.w3schools.com/howto/howto_js_lightbox.asp -->
 
 	<!-- Images used to open the lightbox -->
 	<div class="row" id="lightbox_row">
 	  <div class="column" class="lightbox_row_img">
-	    <img src="images/folklore1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	    <img src="images/folklore1.png" onclick="openModal();currentSlide(1)" class="hover-shadow img-fluid">
 	  </div>
 	  <div class="column">
-	    <img src="images/folklore2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	    <img src="images/folklore2.png" onclick="openModal();currentSlide(2)" class="hover-shadow img-fluid">
 	  </div>
 	  <div class="column">
-	    <img src="images/folklore3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	    <img src="images/folklore3.png" onclick="openModal();currentSlide(3)" class="hover-shadow img-fluid">
 	  </div>
 	  <div class="column">
-	    <img src="images/folklore4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	    <img src="images/folklore4.png" onclick="openModal();currentSlide(4)" class="hover-shadow img-fluid">
 	  </div>
 	</div>
 
@@ -111,21 +110,25 @@ n.js"></script>
 	    </div>
 
 	    <!-- Thumbnail image controls -->
-	    <span class="column">
-	      <img class="demo" src="images/folklore1.png" onclick="currentSlide(1)" alt="Taylor Recording Folklore for the Long Pond Studio Sessions">
-	    </span>
+	    <div class="row"> <!--- width = constant, padding-left and right - dynamic --->
+	    	<!--- @media width>1200 --->
+		    <span class="column">
+		      <img class="demo" src="images/folklore1.png" onclick="currentSlide(1)" alt="Taylor Recording Folklore for the Long Pond Studio Sessions"> <!--- width = constant until 1200px --->
+		    </span>
 
-	    <span class="column">
-	      <img class="demo" src="images/folklore2.png" onclick="currentSlide(2)" alt="Taylor In The Music Video for 'Cardigan'">
-	    </span>
+		    <span class="column">
+		      <img class="demo" src="images/folklore2.png" onclick="currentSlide(2)" alt="Taylor In The Music Video for 'Cardigan'">
+		    </span>
 
-	    <div class="column">
-	      <img class="demo" src="images/folklore3.png" onclick="currentSlide(3)" alt="Taylor Accepting the Grammy Award for Album of the Year for Folklore">
-	    </div>
+		    <div class="column">
+		      <img class="demo" src="images/folklore3.png" onclick="currentSlide(3)" alt="Taylor Accepting the Grammy Award for Album of the Year for Folklore">
+		    </div>
 
-	    <div class="column">
-	      <img class="demo" src="images/folklore4.png" onclick="currentSlide(4)" alt="Taylor Performing 'Cardigan' at the Grammy Awards">
-	    </div>
+		    <div class="column">
+		      <img class="demo" src="images/folklore4.png" onclick="currentSlide(4)" alt="Taylor Performing 'Cardigan' at the Grammy Awards">
+		    </div>
+		</div>
+
 	  </div>
 	</div>
 
@@ -134,24 +137,22 @@ n.js"></script>
 	<ol>
 		<div class="row">
 			<div class="col-sm-7">
-				<li>the 1</li>
-				<li>cardigan</li>
-				<li>the last great american dynasty</li>
-				<li>exile (ft. bon iver)</li>
-				<li>my tears ricochet</li>
-				<li>mirrorball</li>
-				<li>seven</li>
-				<li>august</li>
+				<li>Mine</li>
+				<li>Sparks Fly</li>
+				<li>Back to December</li>
+				<li>Speak Now</li>
+				<li>Dear John</li>
+				<li>Mean</li>
+				<li>The Story of Us</li>
 			</div>
 			<div class="col-sm-5">
-				<li>this is me trying</li>
-				<li>illicit affairs</li>
-				<li>invisible string</li>
-				<li>mad woman</li>
-				<li>epiphany</li>
-				<li>betty</li>
-				<li>peace</li>
-				<li>hoax</li>
+				<li>Never Grow Up</li>
+				<li>Enchanted</li>
+				<li>Better than Revenge</li>
+				<li>Innocent</li>
+				<li>Haunted</li>
+				<li>Last Kiss</li>
+				<li>Long Live</li>
 			</div>
 		</div>
 	</ol>
@@ -161,11 +162,11 @@ n.js"></script>
 
 	<div class="row">
 		<div class="trivia_card col-sm-6" id="folklore_trivia_q_1">
-			<p>Which member of the rock band “The National” was a major collaborator on this album?</p> 
+			<p>The song "Better than Revenge" is written about which of Taylor's ex-boyfriends?</p> 
 		</div>
 
 		<div class="trivia_answer col-sm-3" id="folklore_trivia_a_1">
-			<p>Aaron Dessner!</p>
+			<p>Joe Jonas</p>
 		</div>
 	</div>	
 
@@ -173,11 +174,11 @@ n.js"></script>
 
 	<div class="row">
 		<div class="trivia_card col-sm-6">
-			<p>Folklore was Taylor Swift’s nth time winning Album of the Year. What is n?</p>
+			<p>True or False -- Eleven of the songs on the album charted concurrently on the U.S. <i>Billboard</i> Hot 100, making Swift the third artist in history and first female artist to have ten concurrrent Hot 100 hits.</p>
 		</div>
 
 		<div class="trivia_answer col-sm-3">
-			<p>Aaron Dessner!</p>
+			<p>True!</p>
 		</div>
 	</div>
 
@@ -185,11 +186,11 @@ n.js"></script>
 
 	<div class="row">
 		<div class="trivia_card col-sm-6">
-			<p>Three of the songs on the album work together to tell the perspectives of three different characters in the same story. What are these songs?</p>
+			<p>Which song on the album is written abbout Taylor Lautner?</p>
 		</div>
 
 		<div class="trivia_answer col-sm-3">
-			<p>Aaron Dessner!</p>
+			<p>Back to December</p>
 		</div>
 	</div>
 

@@ -62,16 +62,16 @@ n.js"></script>
 	<!-- Images used to open the lightbox -->
 	<div class="row" id="lightbox_row">
 	  <div class="column" class="lightbox_row_img">
-	    <img src="images/folklore1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	    <img src="images/folklore1.png" onclick="openModal();currentSlide(1)" class="hover-shadow img-fluid">
 	  </div>
 	  <div class="column">
-	    <img src="images/folklore2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	    <img src="images/folklore2.png" onclick="openModal();currentSlide(2)" class="hover-shadow img-fluid">
 	  </div>
 	  <div class="column">
-	    <img src="images/folklore3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	    <img src="images/folklore3.png" onclick="openModal();currentSlide(3)" class="hover-shadow img-fluid">
 	  </div>
 	  <div class="column">
-	    <img src="images/folklore4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	    <img src="images/folklore4.png" onclick="openModal();currentSlide(4)" class="hover-shadow img-fluid">
 	  </div>
 	</div>
 
@@ -111,21 +111,25 @@ n.js"></script>
 	    </div>
 
 	    <!-- Thumbnail image controls -->
-	    <span class="column">
-	      <img class="demo" src="images/folklore1.png" onclick="currentSlide(1)" alt="Taylor Recording Folklore for the Long Pond Studio Sessions">
-	    </span>
+	    <div class="row"> <!--- width = constant, padding-left and right - dynamic --->
+	    	<!--- @media width>1200 --->
+		    <span class="column">
+		      <img class="demo" src="images/folklore1.png" onclick="currentSlide(1)" alt="Taylor Recording Folklore for the Long Pond Studio Sessions"> <!--- width = constant until 1200px --->
+		    </span>
 
-	    <span class="column">
-	      <img class="demo" src="images/folklore2.png" onclick="currentSlide(2)" alt="Taylor In The Music Video for 'Cardigan'">
-	    </span>
+		    <span class="column">
+		      <img class="demo" src="images/folklore2.png" onclick="currentSlide(2)" alt="Taylor In The Music Video for 'Cardigan'">
+		    </span>
 
-	    <div class="column">
-	      <img class="demo" src="images/folklore3.png" onclick="currentSlide(3)" alt="Taylor Accepting the Grammy Award for Album of the Year for Folklore">
-	    </div>
+		    <div class="column">
+		      <img class="demo" src="images/folklore3.png" onclick="currentSlide(3)" alt="Taylor Accepting the Grammy Award for Album of the Year for Folklore">
+		    </div>
 
-	    <div class="column">
-	      <img class="demo" src="images/folklore4.png" onclick="currentSlide(4)" alt="Taylor Performing 'Cardigan' at the Grammy Awards">
-	    </div>
+		    <div class="column">
+		      <img class="demo" src="images/folklore4.png" onclick="currentSlide(4)" alt="Taylor Performing 'Cardigan' at the Grammy Awards">
+		    </div>
+		</div>
+
 	  </div>
 	</div>
 
