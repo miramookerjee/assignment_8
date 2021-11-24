@@ -63,7 +63,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  console.log(slides)
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -74,26 +73,37 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  if (slides.length > 0) {
+    slides[slideIndex-1].style.display = "block";
+  }
+  if (dots.length > 0) {
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
 }
 
 /* Transition Animation - Help From: https://stackoverflow.com/questions/55635784/show-hide-elements-with-animation/55636032 */
 
 function addTriviaMouseoverFolklore() {
-  var question = document.getElementById("folklore_trivia_q_1")
-  var answer = document.getElementById("folklore_trivia_a_1")
+  var question1 = document.getElementById("folklore_trivia_q_1")
+  var answer1 = document.getElementById("folklore_trivia_a_1")
+  var question2 = document.getElementById("folklore_trivia_q_2")
+  var answer2 = document.getElementById("folklore_trivia_a_2")
+  var question3 = document.getElementById("folklore_trivia_q_3")
+  var answer3 = document.getElementById("folklore_trivia_a_3")
 
-  console.log(question);
-  console.log(answer);
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
 
-  question.addEventListener('mouseover', evt => {
-    answer.classList.add('show')
-    console.log(answer)
-  })
+
 }
 
+function addTriviaMouseoverHelper(question, answer) {
+    question.addEventListener('click', evt => {
+    answer.classList.toggle('show')
+  })
+}
 
 
 
