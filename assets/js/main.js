@@ -1,8 +1,10 @@
 function onLoadDebut() {
+  addTriviaMouseoverDebut()
 
 }
 
 function onLoadFearless() {
+  addTriviaMouseoverFearless()
 
 }
 
@@ -84,6 +86,39 @@ function showSlides(n) {
 
 /* Transition Animation - Help From: https://stackoverflow.com/questions/55635784/show-hide-elements-with-animation/55636032 */
 
+
+function addTriviaMouseoverHelper(question, answer) {
+    question.addEventListener('click', evt => {
+    answer.classList.toggle('show')
+  })
+}
+
+function addTriviaMouseoverDebut() {
+  var question1 = document.getElementById("debut_trivia_q_1")
+  var answer1 = document.getElementById("debut_trivia_a_1")
+  var question2 = document.getElementById("debut_trivia_q_2")
+  var answer2 = document.getElementById("debut_trivia_a_2")
+  var question3 = document.getElementById("debut_trivia_q_3")
+  var answer3 = document.getElementById("debut_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
+function addTriviaMouseoverFearless() {
+  var question1 = document.getElementById("fearless_trivia_q_1")
+  var answer1 = document.getElementById("fearless_trivia_a_1")
+  var question2 = document.getElementById("fearless_trivia_q_2")
+  var answer2 = document.getElementById("fearless_trivia_a_2")
+  var question3 = document.getElementById("fearless_trivia_q_3")
+  var answer3 = document.getElementById("fearless_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
 function addTriviaMouseoverFolklore() {
   var question1 = document.getElementById("folklore_trivia_q_1")
   var answer1 = document.getElementById("folklore_trivia_a_1")
@@ -98,14 +133,6 @@ function addTriviaMouseoverFolklore() {
 
 
 }
-
-function addTriviaMouseoverHelper(question, answer) {
-    question.addEventListener('click', evt => {
-    answer.classList.toggle('show')
-  })
-}
-
-
 
 
 

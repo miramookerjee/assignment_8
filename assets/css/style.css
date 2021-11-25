@@ -113,10 +113,12 @@ p {
   border-radius: 2vw;
   border-width: 0.1vw;
   background-color: #E094BD;
+  height: 12vw;
   margin-left: 6vw;
   opacity: 0;
   padding: 1vw 1vw;
   transition: opacity 0.6s linear;
+  overflow-y: scroll;
 }
 
 .trivia_card {
@@ -125,10 +127,17 @@ p {
   background-color: #EEEEEE;
   margin-left: 6vw;
   padding: 1vw 1vw;
+  height: 12vw;
+  overflow-y: scroll;
 }
 
+.trivia_answer p {
+  font-size: 1.5vw;
+}
 
-
+.trivia_answer li {
+  font-size: 1.5vw;
+}
 /* ****************************** Footer ****************************** */
 
 #footer_text {
