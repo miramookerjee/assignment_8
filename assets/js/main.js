@@ -9,11 +9,11 @@ function onLoadFearless() {
 }
 
 function onLoadSpeakNow() {
-
+  addTriviaMouseoverSpeakNow()
 }
 
 function onLoadRed() {
-
+  addTriviaMouseoverRed()
 }
 
 function onLoad1989() {
@@ -113,6 +113,32 @@ function addTriviaMouseoverFearless() {
   var answer2 = document.getElementById("fearless_trivia_a_2")
   var question3 = document.getElementById("fearless_trivia_q_3")
   var answer3 = document.getElementById("fearless_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
+function addTriviaMouseoverSpeakNow() {
+  var question1 = document.getElementById("sn_trivia_q_1")
+  var answer1 = document.getElementById("sn_trivia_a_1")
+  var question2 = document.getElementById("sn_trivia_q_2")
+  var answer2 = document.getElementById("sn_trivia_a_2")
+  var question3 = document.getElementById("sn_trivia_q_3")
+  var answer3 = document.getElementById("sn_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
+function addTriviaMouseoverRed() {
+  var question1 = document.getElementById("red_trivia_q_1")
+  var answer1 = document.getElementById("red_trivia_a_1")
+  var question2 = document.getElementById("red_trivia_q_2")
+  var answer2 = document.getElementById("red_trivia_a_2")
+  var question3 = document.getElementById("red_trivia_q_3")
+  var answer3 = document.getElementById("red_trivia_a_3")
 
   addTriviaMouseoverHelper(question1, answer1)
   addTriviaMouseoverHelper(question2, answer2)
