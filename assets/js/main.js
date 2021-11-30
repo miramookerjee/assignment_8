@@ -17,15 +17,15 @@ function onLoadRed() {
 }
 
 function onLoad1989() {
-
+  addTriviaMouseover1989()
 }
 
-function onLoadRep() {
-
+function onLoadReputation() {
+  addTriviaMouseoverRep()
 }
 
 function onLoadLover() {
-
+  addTriviaMouseoverLover()
 }
 
 function onLoadFolklore() {
@@ -33,7 +33,7 @@ function onLoadFolklore() {
 }
 
 function onLoadEvermore() {
-
+  addTriviaMouseoverEvermore()
 }
 
 
@@ -145,6 +145,47 @@ function addTriviaMouseoverRed() {
   addTriviaMouseoverHelper(question3, answer3)
 }
 
+function addTriviaMouseover1989() {
+  var question1 = document.getElementById("1989_trivia_q_1")
+  var answer1 = document.getElementById("1989_trivia_a_1")
+  var question2 = document.getElementById("1989_trivia_q_2")
+  var answer2 = document.getElementById("1989_trivia_a_2")
+  var question3 = document.getElementById("1989_trivia_q_3")
+  var answer3 = document.getElementById("1989_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
+function addTriviaMouseoverRep() {
+  var question1 = document.getElementById("rep_trivia_q_1")
+  var answer1 = document.getElementById("rep_trivia_a_1")
+  var question2 = document.getElementById("rep_trivia_q_2")
+  var answer2 = document.getElementById("rep_trivia_a_2")
+  var question3 = document.getElementById("rep_trivia_q_3")
+  var answer3 = document.getElementById("rep_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
+
+function addTriviaMouseoverLover() {
+  var question1 = document.getElementById("lover_trivia_q_1")
+  var answer1 = document.getElementById("lover_trivia_a_1")
+  var question2 = document.getElementById("lover_trivia_q_2")
+  var answer2 = document.getElementById("lover_trivia_a_2")
+  var question3 = document.getElementById("lover_trivia_q_3")
+  var answer3 = document.getElementById("lover_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
+
+
 function addTriviaMouseoverFolklore() {
   var question1 = document.getElementById("folklore_trivia_q_1")
   var answer1 = document.getElementById("folklore_trivia_a_1")
@@ -156,9 +197,19 @@ function addTriviaMouseoverFolklore() {
   addTriviaMouseoverHelper(question1, answer1)
   addTriviaMouseoverHelper(question2, answer2)
   addTriviaMouseoverHelper(question3, answer3)
-
-
 }
 
 
+function addTriviaMouseoverEvermore() {
+  var question1 = document.getElementById("evermore_trivia_q_1")
+  var answer1 = document.getElementById("evermore_trivia_a_1")
+  var question2 = document.getElementById("evermore_trivia_q_2")
+  var answer2 = document.getElementById("evermore_trivia_a_2")
+  var question3 = document.getElementById("evermore_trivia_q_3")
+  var answer3 = document.getElementById("evermore_trivia_a_3")
+
+  addTriviaMouseoverHelper(question1, answer1)
+  addTriviaMouseoverHelper(question2, answer2)
+  addTriviaMouseoverHelper(question3, answer3)
+}
 
