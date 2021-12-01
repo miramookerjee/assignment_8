@@ -1,43 +1,45 @@
+/* Load Functions */
+
 function onLoadDebut() {
-  addTriviaMouseoverDebut()
+  addTriviaDebut()
 
 }
 
 function onLoadFearless() {
-  addTriviaMouseoverFearless()
+  addTriviaFearless()
 
 }
 
 function onLoadSpeakNow() {
-  addTriviaMouseoverSpeakNow()
+  addTriviaSpeakNow()
 }
 
 function onLoadRed() {
-  addTriviaMouseoverRed()
+  addTriviaRed()
 }
 
 function onLoad1989() {
-  addTriviaMouseover1989()
+  addTrivia1989()
 }
 
 function onLoadReputation() {
-  addTriviaMouseoverRep()
+  addTriviaRep()
 }
 
 function onLoadLover() {
-  addTriviaMouseoverLover()
+  addTriviaLover()
 }
 
 function onLoadFolklore() {
-  addTriviaMouseoverFolklore()
+  addTriviaFolklore()
 }
 
 function onLoadEvermore() {
-  addTriviaMouseoverEvermore()
+  addTriviaEvermore()
 }
 
 
-/* ****************************** Lightbox (Source: https://www.w3schools.com/howto/howto_js_lightbox.asp) ****************************** */
+/* Lightbox (Source: https://www.w3schools.com/howto/howto_js_lightbox.asp) */
 
 // Open the Modal
 function openModal() {
@@ -86,14 +88,15 @@ function showSlides(n) {
 
 /* Transition Animation - Help From: https://stackoverflow.com/questions/55635784/show-hide-elements-with-animation/55636032 */
 
-
-function addTriviaMouseoverHelper(question, answer) {
+// adds event listener for clicking on a trivia question
+function addTriviaHelper(question, answer) {
     question.addEventListener('click', evt => {
     answer.classList.toggle('show')
   })
 }
 
-function addTriviaMouseoverDebut() {
+// adds trivia event listener for Debut page
+function addTriviaDebut() {
   var question1 = document.getElementById("debut_trivia_q_1")
   var answer1 = document.getElementById("debut_trivia_a_1")
   var question2 = document.getElementById("debut_trivia_q_2")
@@ -101,12 +104,13 @@ function addTriviaMouseoverDebut() {
   var question3 = document.getElementById("debut_trivia_q_3")
   var answer3 = document.getElementById("debut_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-function addTriviaMouseoverFearless() {
+// adds trivia event listener for Fearless page
+function addTriviaFearless() {
   var question1 = document.getElementById("fearless_trivia_q_1")
   var answer1 = document.getElementById("fearless_trivia_a_1")
   var question2 = document.getElementById("fearless_trivia_q_2")
@@ -114,12 +118,13 @@ function addTriviaMouseoverFearless() {
   var question3 = document.getElementById("fearless_trivia_q_3")
   var answer3 = document.getElementById("fearless_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-function addTriviaMouseoverSpeakNow() {
+// adds trivia event listener for Speak Now page
+function addTriviaSpeakNow() {
   var question1 = document.getElementById("sn_trivia_q_1")
   var answer1 = document.getElementById("sn_trivia_a_1")
   var question2 = document.getElementById("sn_trivia_q_2")
@@ -127,12 +132,13 @@ function addTriviaMouseoverSpeakNow() {
   var question3 = document.getElementById("sn_trivia_q_3")
   var answer3 = document.getElementById("sn_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-function addTriviaMouseoverRed() {
+// adds trivia event listener for Red page
+function addTriviaRed() {
   var question1 = document.getElementById("red_trivia_q_1")
   var answer1 = document.getElementById("red_trivia_a_1")
   var question2 = document.getElementById("red_trivia_q_2")
@@ -140,12 +146,13 @@ function addTriviaMouseoverRed() {
   var question3 = document.getElementById("red_trivia_q_3")
   var answer3 = document.getElementById("red_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-function addTriviaMouseover1989() {
+// adds trivia event listener for 1989 page
+function addTrivia1989() {
   var question1 = document.getElementById("1989_trivia_q_1")
   var answer1 = document.getElementById("1989_trivia_a_1")
   var question2 = document.getElementById("1989_trivia_q_2")
@@ -153,12 +160,13 @@ function addTriviaMouseover1989() {
   var question3 = document.getElementById("1989_trivia_q_3")
   var answer3 = document.getElementById("1989_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-function addTriviaMouseoverRep() {
+// adds trivia event listener fo debut page
+function addTriviaRep() {
   var question1 = document.getElementById("rep_trivia_q_1")
   var answer1 = document.getElementById("rep_trivia_a_1")
   var question2 = document.getElementById("rep_trivia_q_2")
@@ -166,13 +174,13 @@ function addTriviaMouseoverRep() {
   var question3 = document.getElementById("rep_trivia_q_3")
   var answer3 = document.getElementById("rep_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-
-function addTriviaMouseoverLover() {
+// adds trivia event listener for Lover page
+function addTriviaLover() {
   var question1 = document.getElementById("lover_trivia_q_1")
   var answer1 = document.getElementById("lover_trivia_a_1")
   var question2 = document.getElementById("lover_trivia_q_2")
@@ -180,13 +188,13 @@ function addTriviaMouseoverLover() {
   var question3 = document.getElementById("lover_trivia_q_3")
   var answer3 = document.getElementById("lover_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-
-function addTriviaMouseoverFolklore() {
+// adds trivia event listener for Folklore page
+function addTriviaFolklore() {
   var question1 = document.getElementById("folklore_trivia_q_1")
   var answer1 = document.getElementById("folklore_trivia_a_1")
   var question2 = document.getElementById("folklore_trivia_q_2")
@@ -194,13 +202,13 @@ function addTriviaMouseoverFolklore() {
   var question3 = document.getElementById("folklore_trivia_q_3")
   var answer3 = document.getElementById("folklore_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
-
-function addTriviaMouseoverEvermore() {
+// adds trivia event listener for Evermore page
+function addTriviaEvermore() {
   var question1 = document.getElementById("evermore_trivia_q_1")
   var answer1 = document.getElementById("evermore_trivia_a_1")
   var question2 = document.getElementById("evermore_trivia_q_2")
@@ -208,8 +216,8 @@ function addTriviaMouseoverEvermore() {
   var question3 = document.getElementById("evermore_trivia_q_3")
   var answer3 = document.getElementById("evermore_trivia_a_3")
 
-  addTriviaMouseoverHelper(question1, answer1)
-  addTriviaMouseoverHelper(question2, answer2)
-  addTriviaMouseoverHelper(question3, answer3)
+  addTriviaHelper(question1, answer1)
+  addTriviaHelper(question2, answer2)
+  addTriviaHelper(question3, answer3)
 }
 
