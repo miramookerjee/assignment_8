@@ -9,15 +9,21 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: none;
-  color: #DB2989;
+/* visited link */
+a:visited {
+  font-family: 'Poor Story', serif;
+  text-decoration: none;
 }
 
-a:visited {
-	color: black;
-	font-family: 'Poor Story', serif;
-	text-decoration: none;
+/* mouse over link */
+a:hover {
+  color: #DB2989;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: pink;
 }
 
 body {
