@@ -11,6 +11,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+  color: #DB2989;
 }
 
 a:visited {
@@ -284,6 +285,7 @@ p {
   color: white;
 }
 
+/* Animation to add shadows to image on hover */
 img.demo {
   opacity: 0.6;
 }
@@ -302,7 +304,7 @@ img.hover-shadow {
 }
 
 /* ****************************** Home Page ****************************** */
-
+/* Animation to increase image size on hover */
 .zoom {
   width: 90%;
   height: 90%;
