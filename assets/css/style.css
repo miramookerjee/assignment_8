@@ -86,7 +86,6 @@ p {
 }
 
 .back {
-	align-items: center;
 	display: flex;	
 	font-family: 'Poor Story', serif;
 	font-size: 1vw;
@@ -98,6 +97,19 @@ p {
 	width: 4%;
 }
 
+/* ****************************** Home Page ****************************** */
+/* Animation to increase image size on hover */
+.zoom {
+  width: 90%;
+  height: 90%;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom)*/
+}
+
 /* ****************************** Detail Page ****************************** */
 
 .album_detail_header {
@@ -106,6 +118,11 @@ p {
 
 .album_detail_pic {
 	padding-left: 15%;
+}
+
+/* make text that also is a link colored */
+.description_link {
+  color: #E094BD;
 }
 
 /*Transition Animation - Help From: https://stackoverflow.com/questions/55635784/show-hide-elements-with-animation/55636032*/
@@ -144,17 +161,6 @@ p {
 
 .trivia_answer li {
   font-size: 1.5vw;
-}
-/* ****************************** Footer ****************************** */
-
-#footer_text {
-	font-family: 'Arial' !important;
-	font-size: 1vw;
-}
-
-#footer_text a {
-	font-family: 'Arial' !important;
-	font-size: 1vw;
 }
 
 /* ****************************** Lightbox (Source: https://www.w3schools.com/howto/howto_js_lightbox.asp) ****************************** */
@@ -309,16 +315,17 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* ****************************** Home Page ****************************** */
-/* Animation to increase image size on hover */
-.zoom {
-  width: 90%;
-  height: 90%;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+
+/* ****************************** Footer ****************************** */
+
+#footer_text {
+  font-family: 'Arial' !important;
+  font-size: 1vw;
 }
 
-.zoom:hover {
-  transform: scale(1.1); /* (150% zoom)*/
+#footer_text a {
+  font-family: 'Arial' !important;
+  font-size: 1vw;
 }
+
 
